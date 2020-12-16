@@ -16,13 +16,69 @@ The machine first makes a guess. The loss function looks at how good the machine
 **4) Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.**
 
   **a) What is the shape of the images training set (how many and the dimension of each)?**
+There are 60,000 in the training set, with dimensions of 28x28
 
   **b) What is the length of the labels training set?**
+There are 60,000 labels (label values are from 0-9)
 
   **c) What is the shape of the images test set?**
+10,000 images, with dimensions of 28x28.
 
   **d) Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
+I tested my code using the first image ('0'). The following was the output:
+  array([0.08533914, 0.08533908, 0.08533908, 0.08535428, 0.08533907,
+         0.08533907, 0.08533907, 0.23193258, 0.0853391 , 0.08533957],
+        dtype=float32)
 
   **e) Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
+Using the same as above, I got 7.
 
   **f) Produce the following plot for your randomly selected image from the test dataset**
+![](July.8.image.png)
+
+
+
+
+
+class_names = ['0', '1', '2', '3', '4',
+               '5', '6', '7', '8', '9']
+
+def plot_image(i, predictions_array, true_label, img):
+  true_label, img = true_label[i], img[i]
+  plt.grid(False)
+  plt.xticks([])
+  plt.yticks([])
+
+  plt.imshow(img, cmap=plt.cm.binary)
+
+  predicted_label = np.argmax(predictions_array)
+  if predicted_label == true_label:
+    color = 'blue'
+  else:
+    color = 'red'
+
+  plt.xlabel("{} {:2.0f}% ({})".format(class_names[predicted_label],
+                                100*np.max(predictions_array),
+                                class_names[true_label]),
+                                color=color)
+
+def plot_value_array(i, predictions_array, true_label):
+  true_label = true_label[i]
+  plt.grid(False)
+  plt.xticks(range(10))
+  plt.yticks([])
+  thisplot = plt.bar(range(10), predictions_array, color="#777777")
+  plt.ylim([0, 1])
+  predicted_label = np.argmax(predictions_array)
+
+  thisplot[predicted_label].set_color('red')
+  thisplot[true_label].set_color('blue')
+
+
+i = 0
+plt.figure(figsize=(6,3))
+plt.subplot(1,2,1)
+plot_image(i, predictions[i], y_test, x_test)
+plt.subplot(1,2,2)
+plot_value_array(i, predictions[i],  y_test)
+plt.show()
