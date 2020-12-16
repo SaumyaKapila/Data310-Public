@@ -16,21 +16,26 @@ The machine first makes a guess. The loss function looks at how good the machine
 **4) Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.**
 
   **a) What is the shape of the images training set (how many and the dimension of each)?**
+
 There are 60,000 in the training set, with dimensions of 28x28
 
   **b) What is the length of the labels training set?**
+
 There are 60,000 labels (label values are from 0-9)
 
   **c) What is the shape of the images test set?**
+
 10,000 images, with dimensions of 28x28.
 
   **d) Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
+
 I tested my code using the first image ('0'). The following was the output:
   array([0.08533914, 0.08533908, 0.08533908, 0.08535428, 0.08533907,
          0.08533907, 0.08533907, 0.23193258, 0.0853391 , 0.08533957],
         dtype=float32)
 
   **e) Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
+
 Using the same as above, I got 7.
 
   **f) Produce the following plot for your randomly selected image from the test dataset**
