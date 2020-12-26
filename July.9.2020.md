@@ -17,3 +17,5 @@ The loss function looks at how good the machine was in guessing the correct labe
 
 
  **Likewise do the same for the training and validation accuracy graph.**
+ 
+ ![July 9 Graph 2](https://github.com/SaumyaKapila/Data310-Public/blob/master/Graph%202%20ML%20July%209.png?raw=true)
