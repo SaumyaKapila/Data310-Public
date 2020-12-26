@@ -21,4 +21,10 @@ This graph shows the training and validation loss. As explained previously, the 
  
  ![July 9 Graph 2](https://github.com/SaumyaKapila/Data310-Public/blob/master/Graph%202%20ML%20July%209.png?raw=true)
 
-For this graph I ran it for 20 epochs. This graph shows that model is overfit, as the training accuracy is greater than the validation accuracy starting at 8 epochs. While the accuracy is increasing overall, at about 8 epochs the accuracy plateaus. Based on this information, we might consider stopping the training of the model at 10 epochs, rather than continuing on to 20 epochs. Regardless, this graph shows training and validation accuracy; as the number of epochs go up, so should the accuracy (since the model should become more accurate), which is the trend that the graph is showing. 
+For this graph I ran it for 20 epochs. This graph shows that model is overfit, as the training accuracy is greater than the validation accuracy starting at 8 epochs. While the accuracy is increasing overall, at about 8 epochs the accuracy plateaus. Based on this information, we might consider stopping the training of the model at 10 epochs, rather than continuing on to 20 epochs. A better method would be to use EarlyStopping callback which can specify to stop training once the loss has minimized. Regardless, this graph shows training and validation accuracy; as the number of epochs go up, so should the accuracy (since the model should become more accurate), which is the trend that the graph is showing. 
+
+**Sources for today's daily response:**
+https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping?version=nightly
+https://www.tensorflow.org/tutorials/keras/text_classification
+https://www.tensorflow.org/tutorials/keras/text_classification_with_hub
+https://tfhub.dev/
