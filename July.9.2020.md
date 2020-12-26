@@ -15,7 +15,10 @@ The loss function looks at how good the machine was in guessing the correct labe
 
 ![July 9 Graph 1](https://github.com/SaumyaKapila/Data310-Public/blob/master/Graph%201%20ML%20july%209.png?raw=true)
 
+For this graph, I ran it for 20 epochs. At around 8 epochs, the training and validation loss began to diverge. As you can see from the graph above, as the number of epochs increases, the loss decreases.
 
  **Likewise do the same for the training and validation accuracy graph.**
  
  ![July 9 Graph 2](https://github.com/SaumyaKapila/Data310-Public/blob/master/Graph%202%20ML%20July%209.png?raw=true)
+
+For this graph I ran it for 20 epochs. This graph shows that model is overfit, as the training accuracy is greater than the validation accuracy starting at 8 epochs. While the accuracy is increasing overall, at about 8 epochs the accuracy plateaus. Based on this information, we might consider stopping the training of the model at 10 epochs, rather than continuing on to 20 epochs.   
