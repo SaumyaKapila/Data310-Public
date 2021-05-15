@@ -7,4 +7,4 @@
 
 [Project 1](https://saumyakapila.github.io/Data310-Public/Project1)
 
-[Project 1](https://saumyakapila.github.io/Data310-Public/July16)
+[Project 2](https://saumyakapila.github.io/Data310-Public/July16)
