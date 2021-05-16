@@ -21,11 +21,14 @@ We can see in the graphs above that as the number of epochs went up, so did the 
 *Use the model to predict 3 dog images and 3 cat images. Upload your images and the prediction. How did your model perform in practice? Do you have any ideas of how to improve the model’s performance?*
 
 The first image was of a cat, as you can see below, and the model correctly identified it as a cat.
-![]()
+![](cat.jpeg)
+
 The second image was also of a cat and was correctly identified as a cat.
-![]()
+![](cat2.jpeg)
+
 The third image, another cat, was correctly identified.
-![]()
+![](cat3.jpeg)
+
 The fourth image, a dog, was unfortunately misidentified as a cat.
 
 The fifth image, also a dog, was again misidentified as a cat.
