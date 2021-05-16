@@ -30,7 +30,10 @@ The third image, another cat, was correctly identified.
 ![](cat3.jpeg)
 
 The fourth image, a dog, was unfortunately misidentified as a cat.
+![](golder-retriever-puppy.jpeg)
 
 The fifth image, also a dog, was again misidentified as a cat.
+![](maxresdefault.jpeg)
 
 The last image was correctly identified as a dog.
+![](retriever.jpeg)
