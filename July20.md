@@ -39,3 +39,5 @@ The fifth image, also a dog, was again misidentified as a cat.
 The last image was correctly identified as a dog.
 
 ![](retriever.jpeg)
+
+In practice, the model performed ok; as you can see from the results, ⅖ of the images were mis-identified, which isn’t great. I think that raising the number of epochs may improve the model. 
